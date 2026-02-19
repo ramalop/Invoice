@@ -42,7 +42,7 @@ export default function Login() {
 
         <CardContent>
           <form className="space-y-5">
-            {/* Email */}
+           
             <div className="space-y-2">
               <Label>Email</Label>
               <Input
@@ -55,7 +55,7 @@ export default function Login() {
               />
             </div>
 
-            {/* Password */}
+            
             <div className="space-y-2">
               <Label>Password</Label>
               <Input

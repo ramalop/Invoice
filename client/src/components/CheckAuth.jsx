@@ -6,17 +6,14 @@ function CheckAuth({ isAuthenticated, children }) {
   const isAuthPage =
     pathname === "/login" || pathname === "/signup";
 
-  // not logged in + trying protected route
+ 
   if (!isAuthenticated && !isAuthPage) {
     return <Navigate to="/login" replace />;
   }
 
-  // 🚫 already logged in + trying login/signup
   if (isAuthenticated && isAuthPage) {
     return <Navigate to="/" replace />;
   }
-
-  // ✅ allowed
   return children;
 }
 

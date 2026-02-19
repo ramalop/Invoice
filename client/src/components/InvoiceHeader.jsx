@@ -19,7 +19,6 @@ function InvoiceHeader({ invoice }) {
     <Card>
       <CardContent className="p-6 space-y-4">
 
-        {/* Top row */}
         <div className="flex items-center justify-between">
           <h2 className="text-2xl font-bold">
             Invoice #{invoiceNumber}
@@ -30,7 +29,6 @@ function InvoiceHeader({ invoice }) {
           </Badge>
         </div>
 
-        {/* Grid info */}
         <div className="grid grid-cols-2 gap-6 text-sm">
 
           <div>

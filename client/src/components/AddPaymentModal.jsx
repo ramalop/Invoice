@@ -28,7 +28,7 @@ function AddPaymentModal({
 
     const num = Number(amount);
 
-    // ---- basic validation ----
+    // basic validation
 
     if (!num || num <= 0) return;
     if (num > Number(balanceDue)) return;

@@ -40,9 +40,7 @@ function CreateInvoice() {
 
   const removeLine = (index) => {
     setLineItems(lineItems.filter((_, i) => i !== index));
-  };
-
-  // -------- submit --------
+  }
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -63,8 +61,6 @@ function CreateInvoice() {
     });
   };
 
-  // -------- UI --------
-
   return (
     <div className="max-w-3xl mx-auto p-8">
       
@@ -77,7 +73,6 @@ function CreateInvoice() {
         <CardContent>
           <form onSubmit={handleSubmit} className="space-y-6">
 
-            {/* Basic Info */}
 
             <div className="space-y-2">
               <Label>Invoice Number</Label>
@@ -119,7 +114,7 @@ function CreateInvoice() {
               </div>
             </div>
 
-            {/* Line Items */}
+            
 
             <div className="space-y-4">
               <h3 className="font-semibold">Line Items</h3>
@@ -186,7 +181,7 @@ function CreateInvoice() {
               </Button>
             </div>
 
-            {/* Submit */}
+  
 
             <Button type="submit" className="w-full">
               Create Invoice

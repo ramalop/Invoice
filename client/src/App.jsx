@@ -8,7 +8,6 @@ import { Toaster } from "@/components/ui/toaster";
 
 import { useDispatch, useSelector } from "react-redux";
 import { checkAuth } from "./store/auth-slice";
-import Dashboard from "./pages/Dashboard";
 import InvoiceDetailsPage from "./pages/InvoiceDetailsPage";
 import CreateInvoice from "./components/CreateInvoice";
 import Archive from "./pages/Archive";

@@ -45,7 +45,7 @@ export default function Signup() {
         <CardContent>
           <form className="space-y-5">
 
-            {/* Name */}
+            
             <div className="space-y-2">
               <Label>Full Name</Label>
               <Input
@@ -56,7 +56,7 @@ export default function Signup() {
               />
             </div>
 
-            {/* Email */}
+            
             <div className="space-y-2">
               <Label>Email</Label>
               <Input
@@ -67,7 +67,7 @@ export default function Signup() {
               />
             </div>
 
-            {/* Password */}
+            
             <div className="space-y-2">
               <Label>Password</Label>
               <Input
